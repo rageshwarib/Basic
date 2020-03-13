@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash -x
 
 number=$1
 echo "Table of powers of two are ::"
