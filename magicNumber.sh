@@ -16,21 +16,12 @@ do
 
 	case $number in
 	1)
-		if (( $number == 1 ))
-		then
-			echo "Your thinking number is $magic"
-		fi 
-		break ;;
+		echo "Your thinking number is $magic"
+ 		break ;;
 	2)
-      if (( $number == 2 ))
-      then
-         endNumber=$magic
-      fi ;;
+		endNumber=$magic ;;
 	3)
-		if (( $number == 3 ))
-		then
-			startNumber=$magic
-		fi ;;
+		startNumber=$magic ;;
 	*)
 		echo "Please enter valid number" ;;
 	esac
