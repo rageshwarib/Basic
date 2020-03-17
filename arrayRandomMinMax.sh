@@ -33,11 +33,11 @@ function secondSmallest()
 	do
    	if (( ${randomArray[count]} < $smallest))
    	then
-      	secondSmallest=$smallest
-      	smallest=${randomArray[count]}
+			secondSmallest=$smallest
+			smallest=${randomArray[count]}
    	elif (( ${randomArray[count]} < $secondSmallest ))
    	then
-      	secondSmallest=${randomArray[count]}
+			secondSmallest=${randomArray[count]}
    	fi
 	done
 	echo "Second Smallest:: $secondSmallest"
