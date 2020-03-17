@@ -13,7 +13,7 @@ function isPalindrome()
       Number=$((Number/10))	
    done	
 	if (( $secondNumber == $sum ))	
-   then 	
+	then 	
 		echo "Given numbers are Palindromes"	
 	else	
 		echo "Given numbers are not Palindromes"	
