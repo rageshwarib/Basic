@@ -7,11 +7,11 @@ function isPalindrome()
 	secondNumber=$2	
 	Number=$firstNumber	
 	while (($Number!=0))	
-   do	
-      remainder=$((Number % 10))	
-      sum=$((sum*10+remainder))	
-      Number=$((Number/10))	
-   done	
+	do	
+		remainder=$((Number % 10))	
+		sum=$((sum*10+remainder))	
+		Number=$((Number/10))	
+	done	
 	if (( $secondNumber == $sum ))	
 	then 	
 		echo "Given numbers are Palindromes"	
