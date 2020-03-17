@@ -31,14 +31,14 @@ function secondSmallest()
 {
 	for ((count=0;count<=9;count++))
 	do
-   	if (( ${randomArray[count]} < $smallest))
-   	then
+		if (( ${randomArray[count]} < $smallest))
+		then
 			secondSmallest=$smallest
 			smallest=${randomArray[count]}
-   	elif (( ${randomArray[count]} < $secondSmallest ))
-   	then
+		elif (( ${randomArray[count]} < $secondSmallest ))
+		then
 			secondSmallest=${randomArray[count]}
-   	fi
+		fi
 	done
 	echo "Second Smallest:: $secondSmallest"
 }
