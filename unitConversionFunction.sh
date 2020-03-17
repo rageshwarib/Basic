@@ -19,13 +19,13 @@ function celciusToFahrenheit()
 
 function fahrenheitToCelcius()	
 {	
-   read -p ">>>Enter a temperature in Fahrenheit::" fahrenheitTemp	
-   if (( $fahrenheitTemp >= $minFahrenheitTemp && $fahrenheitTemp <= $maxFahrenheitTemp ))	
-   then	
-      celciusTemp=`echo "scale=3; (($fahrenheitTemp-$minFahrenheitTemp))*5/9" | bc`	
-      echo ">>>Temperature in Celcius ::" `echo "scale=3; $celciusTemp" | bc`	
-   else	
-      echo "Invalid Input..."	
+	read -p ">>>Enter a temperature in Fahrenheit::" fahrenheitTemp	
+	if (( $fahrenheitTemp >= $minFahrenheitTemp && $fahrenheitTemp <= $maxFahrenheitTemp ))	
+	then	
+		celciusTemp=`echo "scale=3; (($fahrenheitTemp-$minFahrenheitTemp))*5/9" | bc`	
+		echo ">>>Temperature in Celcius ::" `echo "scale=3; $celciusTemp" | bc`	
+	else	
+		echo "Invalid Input..."	
 	fi	
 }	
 
